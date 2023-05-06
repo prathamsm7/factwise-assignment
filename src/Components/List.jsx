@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import celebrities from '../celebrities.json';
 import ListItem from './ListItem';
+import { RxMagnifyingGlass } from 'react-icons/rx';
 
 const List = () => {
   const [celebrityList, setCelebrityList] = useState([...celebrities]);
@@ -15,9 +16,6 @@ const List = () => {
   };
 
   function handleExpand(id) {
-    console.log('expand id', expandId);
-    console.log('received id', id);
-
     if (expand) {
       expand && id == expandId
         ? (setExpandId(null), setExpand(false))
@@ -54,7 +52,6 @@ const List = () => {
       return item.id != id;
     });
 
-    console.log('newArray', newArray);
     setExpand(false);
     setExpandId(null);
     setCelebrityList([...newArray]);
@@ -62,6 +59,11 @@ const List = () => {
 
   return (
     <div className='list'>
+      <div className='searchDiv'>
+        <input type='text' placeholder='Search User' className='search' />
+        <RxMagnifyingGlass className='searchIcon' />
+      </div>
+
       {celebrityList.map((celebrity, index) => {
         return (
           <ListItem

@@ -151,3 +151,22 @@ button {
 svg {
   cursor: pointer;
 }
+
+.search {
+  width: 440px;
+  padding: 10px 15px;
+}
+
+.search::placeholder {
+  padding-left: 20px;
+}
+
+.searchDiv {
+  position: relative;
+}
+
+.searchIcon {
+  position: absolute;
+  top: 15px;
+  left: 2%;
+}
