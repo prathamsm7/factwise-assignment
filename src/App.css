@@ -1,0 +1,153 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.listItemContainer {
+  width: 450px;
+  border: 1px solid rgb(112, 111, 111);
+  border-radius: 10px;
+  margin: 10px 0px;
+  padding: 10px 10px;
+}
+
+.listitem {
+  display: flex;
+  align-items: center;
+}
+
+.listitem img {
+  border-radius: 50%;
+}
+
+.listitem div {
+  width: 100%;
+  display: flex;
+  margin-left: 15px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.detailsTop {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 5px;
+}
+
+.detailsTop span,
+.description span {
+  font-weight: 500;
+  color: gray;
+}
+
+.detailsTop p,
+description p {
+  margin: 5px 0;
+}
+
+.details {
+  display: none;
+}
+
+.expand {
+  display: block;
+}
+
+.actions {
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+  padding: 0 5px;
+}
+
+textarea {
+  display: block;
+  width: 95%;
+  padding: 10px 5px;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+input,
+select {
+  display: block;
+  border-radius: 5px;
+  border: 1px solid;
+  margin-top: 5px;
+  padding: 2px;
+  width: 120px;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+.modal h2 {
+  margin-top: 0;
+}
+
+.modal button {
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btnDiv {
+  display: flex;
+  gap: 20px;
+  justify-content: end;
+}
+
+.btnDiv :nth-child(1) {
+  border: 1px solid;
+}
+
+.btnDiv :nth-child(2) {
+  background-color: red;
+  color: white;
+  border: none;
+}
+
+svg {
+  cursor: pointer;
+}
